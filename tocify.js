@@ -3,16 +3,15 @@
  * Defines Javascript behaviors for the tocify module.
  */
 
-(function ($, Drupal, drupalSettings) {
+(function ($) {
 
-"use strict";
+  Drupal.behaviors.tocify = {
+    attach: function (context, settings) {
+      console.log(settings.tocify);
+      $('#tocify').tocify(
+        settings.tocify
+      );
+    }
+  };
 
-Drupal.behaviors.nodeDetailsSummaries = {
-  attach: function (context) {
-    var toc = $('#tocify').tocify({
-      context: '.node'
-    });
-  }
-};
-
-})(jQuery, Drupal, drupalSettings);
+})(jQuery);

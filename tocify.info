@@ -1,0 +1,5 @@
+name = Tocify
+description = Tocify your content.
+core = 7.x
+dependencies[] = block
+dependencies[] = jquery_update
