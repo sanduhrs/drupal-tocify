@@ -1,0 +1,9 @@
+tocify:
+  js:
+    tocify.js: {}
+  css:
+    theme:
+      tocify.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

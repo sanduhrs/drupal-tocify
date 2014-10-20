@@ -7,9 +7,7 @@
 
 namespace Drupal\tocify\Plugin\Block;
 
-use Drupal\block\Annotation\Block;
-use Drupal\block\BlockBase;
-use Drupal\Core\Annotation\Translation;
+use \Drupal\Core\Block\BlockBase;
 
 /**
  * Provides a 'Tocify: Table of Contents' block.
@@ -30,8 +28,12 @@ class TocifyTOCBlock extends BlockBase {
       '#type' => 'markup',
       '#markup' => t('<div id="tocify"></div>'),
       '#attached' => array(
-        'library' => array(
-          array('tocify', 'tocify'),
+        'js' => array(
+          drupal_get_path('module', 'tocify') . '/tocify.js' => array(),
+          drupal_get_path('module', 'tocify') . '/jquery.tocify.js' => array(),
+        ),
+        'css' => array(
+          drupal_get_path('module', 'tocify') . '/jquery.tocify.css' => array(),
         ),
       ),
     );

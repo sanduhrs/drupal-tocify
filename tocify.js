@@ -7,10 +7,10 @@
 
 "use strict";
 
-Drupal.behaviors.nodeDetailsSummaries = {
+Drupal.behaviors.tocify = {
   attach: function (context) {
     var toc = $('#tocify').tocify({
-      context: '.node'
+      context: '.node__content'
     });
   }
 };
