@@ -9,6 +9,11 @@ namespace Drupal\tocify\Tests;
 
 use Drupal\simpletest\WebTestBase;
 
+/**
+ * Test the various features of tocify.
+ *
+ * @group tocify
+ */
 class TocifyTest extends WebTestBase {
 
   /**
@@ -18,24 +23,17 @@ class TocifyTest extends WebTestBase {
    */
   public static $modules = array('block', 'tocify');
 
-  public static function getInfo() {
-    return array(
-      'name' => 'Tocify functionality',
-      'description' => 'Test the various features of tocify.',
-    );
-  }
-
   /**
    * Enable modules and create user with specific permissions.
    */
-  function setUp() {
+  protected function setUp() {
     parent::setUp();
   }
 
   /**
    * Tests tocify block functionality.
    */
-  function testTocifyBlock() {
+  public function testTocifyBlock() {
   }
 
 }

@@ -7,12 +7,16 @@
 
 "use strict";
 
-Drupal.behaviors.tocify = {
+Drupal.behaviors.nodeDetailsSummaries = {
   attach: function (context) {
-    var toc = $('#tocify').tocify({
+
+    var toc = $("#tocify").tocify({
+      selectors: "h2,h3,h4,h5",
       context: '.node__content'
     });
+
   }
 };
 
 })(jQuery, Drupal, drupalSettings);
+

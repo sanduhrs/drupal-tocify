@@ -1,9 +1,17 @@
 tocify:
+  title: Tocify
+  remote: http://gregfranko.com/jquery.tocify.js/
+  version: 1.9.0
+  license:
+    name: MIT
+    remote: https://raw.githubusercontent.com/gfranko/jquery.tocify.js/master/LICENSE-MIT
+    gpl-compatible: true
   js:
-    tocify.js: {}
+    vendor/gfranko/jquery.tocify.js/src/javascripts/jquery.tocify.js: { }
+    js/tocify.js: { }
   css:
     theme:
-      tocify.css: {}
+      vendor/gfranko/jquery.tocify.js/src/stylesheets/jquery.tocify.css: {}
   dependencies:
     - core/jquery
-    - core/drupalSettings
+    - core/jquery.ui.widget

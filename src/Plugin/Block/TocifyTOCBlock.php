@@ -2,12 +2,12 @@
 
 /**
  * @file
- * Contains \Drupal\wiki\Plugin\Block\WikiTOCBlock.
+ * Contains \Drupal\wiki\Plugin\Block\TocifyTOCBlock.
  */
 
 namespace Drupal\tocify\Plugin\Block;
 
-use \Drupal\Core\Block\BlockBase;
+use Drupal\Core\Block\BlockBase;
 
 /**
  * Provides a 'Tocify: Table of Contents' block.
@@ -21,21 +21,15 @@ use \Drupal\Core\Block\BlockBase;
 class TocifyTOCBlock extends BlockBase {
 
   /**
-   * Implements \Drupal\block\BlockBase::blockBuild().
+   * {@inheritdoc}
    */
   public function build() {
     return array(
-      '#type' => 'markup',
-      '#markup' => t('<div id="tocify"></div>'),
-      '#attached' => array(
-        'js' => array(
-          drupal_get_path('module', 'tocify') . '/tocify.js' => array(),
-          drupal_get_path('module', 'tocify') . '/jquery.tocify.js' => array(),
-        ),
-        'css' => array(
-          drupal_get_path('module', 'tocify') . '/jquery.tocify.css' => array(),
-        ),
-      ),
+      '#type' => 'inline_template',
+      '#template' => '<div id="tocify"></div>',
+      '#attached' => [
+        'library' => ['tocify/tocify']
+      ]
     );
   }
 
