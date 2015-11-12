@@ -1,0 +1,29 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "7589871bf27a10444463c9260af8bfaf",
+    "content-hash": "cb06d6459b88d561cc0418b008529a0a",
+    "packages": [
+        {
+            "name": "gfranko/jquery.tocify.js",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gfranko/jquery.tocify.js",
+                "reference": "v1.9.0"
+            },
+            "type": "library"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
