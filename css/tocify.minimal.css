@@ -25,3 +25,7 @@
 .tocify-subheader .tocify-subheader .tocify-subheader {
     text-indent: 40px;
 }
+
+.tocify-focus {
+    background-color: white;
+}
