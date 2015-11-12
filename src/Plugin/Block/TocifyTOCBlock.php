@@ -14,8 +14,8 @@ use Drupal\Core\Block\BlockBase;
  *
  * @Block(
  *   id = "tocify_toc",
- *   subject = @Translation("Tocify: Table of Contents"),
- *   admin_label = @Translation("Tocify: Table of Contents")
+ *   subject = @Translation("Table of Contents"),
+ *   admin_label = @Translation("Table of Contents")
  * )
  */
 class TocifyTOCBlock extends BlockBase {
