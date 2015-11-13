@@ -29,9 +29,12 @@ Drupal.behaviors.nodeDetailsSummaries = {
       history: true,
       hashGenerator: 'compact',
       highlightDefault: true,
-      ignoreSelector: null,
+      ignoreSelector: '.comment-form__title',
       scrollHistory: false
     });
+    toc.parent().parent()
+        .css('overflow', 'auto')
+        .css('height', '80%');
 
   }
 };
