@@ -7,7 +7,7 @@ tocify:
     remote: https://raw.githubusercontent.com/gfranko/jquery.tocify.js/master/LICENSE-MIT
     gpl-compatible: true
   js:
-    vendor/gfranko/jquery.tocify.js/src/javascripts/jquery.tocify.js: {}
+    sites/all/libraries/jquery.tocify.js/src/javascripts/jquery.tocify.js: {}
     js/tocify.js: { }
   css:
     theme:

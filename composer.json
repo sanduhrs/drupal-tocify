@@ -3,22 +3,5 @@
   "description": "Tocify module",
   "type": "drupal-module",
   "license": "GPL-2.0+",
-  "minimum-stability": "dev",
-  "require": {
-    "gfranko/jquery.tocify.js": "1.*"
-  },
-  "repositories": [
-    {
-      "type": "package",
-      "package": {
-        "name": "gfranko/jquery.tocify.js",
-        "version": "1.9.0",
-        "source": {
-          "url": "https://github.com/gfranko/jquery.tocify.js",
-          "type": "git",
-          "reference": "v1.9.0"
-        }
-      }
-    }
-  ]
+  "minimum-stability": "dev"
 }
