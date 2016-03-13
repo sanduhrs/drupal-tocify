@@ -11,7 +11,7 @@ Drupal.behaviors.nodeDetailsSummaries = {
   attach: function (context) {
 
     var toc = $("#tocify").tocify({
-      context: '.node__content',
+      context: '.node__content .text-formatted',
       selectors: 'h2,h3,h4,h5,h6',
       showAndHide: true,
       showEffect: 'slideDown',
@@ -29,7 +29,7 @@ Drupal.behaviors.nodeDetailsSummaries = {
       history: true,
       hashGenerator: 'compact',
       highlightDefault: true,
-      ignoreSelector: '.comment-form__title',
+      ignoreSelector: '',
       scrollHistory: false
     });
     toc.parent().parent()
@@ -40,4 +40,3 @@ Drupal.behaviors.nodeDetailsSummaries = {
 };
 
 })(jQuery, Drupal, drupalSettings);
-
